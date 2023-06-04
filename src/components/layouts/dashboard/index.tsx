@@ -138,7 +138,7 @@ const DashboardContent = () => {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              COLOSSEUM
             </Typography>
           </Toolbar>
         </AppBar>
