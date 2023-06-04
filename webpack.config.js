@@ -8,17 +8,17 @@ module.exports = {
   },
   publicPath: "/",
   outputDir: "distm",
-  devServer: {
-    port: 5000,
-    proxy: {
-      "^/v1/": {
-        target: "https://aaa",
-        secure: false,
-        logLevel: "debug",
-        // pathRewrite: { "^/v1/": "/manager/v1/" }
-      },
-    },
-  },
+  // devServer: {
+  //   port: 5000,
+  //   proxy: {
+  //     "^/v1/": {
+  //       target: "https://aaa",
+  //       secure: false,
+  //       logLevel: "debug",
+  //       // pathRewrite: { "^/v1/": "/manager/v1/" }
+  //     },
+  //   },
+  // },
   pages: {
     index: {
       entry: "src/main.js", // 最初に実行されるファイル名
