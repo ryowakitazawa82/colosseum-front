@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    [
+      "postcss-preset-env",
+      {
+        "stage": 0,
+        "features": {
+          "custom-properties": false,
+          "custom-media-queries": {
+            "importFrom": "src/common/styles/customMedia.css"
+          }
+        }
+      }
+    ],
+    "postcss-import"
+  ]
+}

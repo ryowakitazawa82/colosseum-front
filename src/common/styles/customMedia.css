@@ -1,0 +1,3 @@
+@custom-media --large-screen (1440px <= width);
+@custom-media --tablet (741px <= width <= 1024px);
+@custom-media --smartphone (width <= 740px);
