@@ -112,11 +112,18 @@ const DashboardContent = () => {
     <ThemeProvider theme={theme}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+        <AppBar
+          position="absolute"
+          open={open}
+          sx={{
+            boxShadow: "none",
+            height: "80px",
+            backgroundColor: "#fff",
+          }}
+        >
           <Toolbar
             sx={{
               pr: "24px", // keep right padding when drawer closed
-              backgroundColor: theme.palette.primary.dark,
             }}
           >
             <IconButton
@@ -134,11 +141,13 @@ const DashboardContent = () => {
             <Typography
               component="h1"
               variant="h6"
-              color="inherit"
+              color="#707070"
+              letterSpacing={"0.2em"}
+              fontSize={"24px"}
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              COLOSSEUM
+              4月のタスク
             </Typography>
           </Toolbar>
         </AppBar>
